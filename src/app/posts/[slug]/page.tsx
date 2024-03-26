@@ -1,3 +1,5 @@
+"use client"
+
 import { Post } from "@/utils/interface";
 import { client } from "../../../../sanity/lib/client";
 import styles from "./index.module.css";
@@ -40,11 +42,9 @@ async function getPost(slug: string) {
 const myPortableTextComponents = {
     types: {
         image: ({ value }: any) => (
-            <Image
+            <img
                 src={urlForImage(value)}
                 alt="Post"
-                width={400}
-                height={400}
                 className={styles.bodyimg}
             />
         ),

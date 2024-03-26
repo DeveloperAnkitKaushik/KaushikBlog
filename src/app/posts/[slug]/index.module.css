@@ -31,8 +31,7 @@
 
 .imagecontainer {
     padding: 2rem 0;
-    width: 60%;
-    max-height: 50rem;
+    width: 50%;
     overflow: hidden;
 }
 
@@ -46,20 +45,22 @@
     box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
     padding: 0 2rem 4rem 2rem;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body_headings {
     color: var(--dark_blue);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .body_headings,
 .bodyimg {
     margin-top: 4rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
-
-
 
 .bodyimg {
     width: 100%;
@@ -69,6 +70,10 @@
 @media(max-width: 1024px) {
     .heading {
         padding: 0 1rem;
+    }
+
+    .imagecontainer {
+        width: 100%;
     }
 
     .body {

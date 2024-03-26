@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./page.module.css";
 import { client } from "../../sanity/lib/client";
 import DisplayBlog from "@/components/DisplayBlog/DisplayBlog";
@@ -22,8 +24,6 @@ const query = `*[_type == "post"] | order(publishedAt desc) [0] {
 
 const Home = async () => {
     const latestPost = await client.fetch(query);
-
-    // Unlocking the Power of Words, Explore, Connect, Transform
     return (
         <>
             <div className={styles.heroimg}></div>

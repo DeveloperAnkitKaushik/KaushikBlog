@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import { client } from "../../../sanity/lib/client";
 import styles from "./index.module.css";

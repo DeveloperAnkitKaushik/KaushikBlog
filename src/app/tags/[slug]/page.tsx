@@ -1,3 +1,5 @@
+"use client"
+
 import { Post } from "@/utils/interface";
 import { client } from "../../../../sanity/lib/client";
 import styles from "./index.module.css";
