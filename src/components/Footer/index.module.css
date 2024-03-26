@@ -1,0 +1,14 @@
+.container {
+    background-color: var(--dark_blue);
+}
+
+.innercontainer {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.link {
+    color: var(--main_color);
+}

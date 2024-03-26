@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@font-face {
+  font-family: 'Waterlily';
+  src: url('/src/utils/font/WaterlilyFont.ttf') format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+:root {
+  --waterlily: 'Waterlily', sans-serif;
+  --main_color: #f0a04b;
+  --gray: rgb(207, 207, 207);
+  --dark_gray: rgb(158, 158, 158);
+  --dark_blue: rgb(26, 31, 42);
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+.btngradient {
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+  margin: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.btngradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.textgradient {
+  background: linear-gradient(79deg, #2b0aff, #ff5b8a 49%, #ff5b8a 55%, #fba64b 77%, #f99b52);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+.maincontainer {
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 1rem 5%;
+}
+
+.btn_primary {
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  padding: 0.7rem 1.3rem;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.btn_primary:hover {
+  box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
+}
+
+@media(max-width: 1536px) {
+  .maincontainer {
+    max-width: 1366px;
+  }
+}
+
+@media(max-width: 1366px) {
+  .maincontainer {
+    max-width: 1280px;
+  }
+}
+
+@media(max-width: 1280px) {
+  .maincontainer {
+    max-width: 1024px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .maincontainer {
+    max-width: 768px;
+  }
+}
+
+@media(max-width: 768px) {
+  .maincontainer {
+    max-width: 638px;
+  }
+
+  ul {
+    padding-left: 0.5rem;
+  }
+}
