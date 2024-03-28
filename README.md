@@ -1,4 +1,4 @@
-![alt text](https://i.ibb.co/dthhvF2/kaushik-s-Blog.png)
+![alt text](/public/hero.png)
 
 ## Kaushik's Blog!
 
