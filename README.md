@@ -1,4 +1,4 @@
-![alt text]('./homepage.png)
+![alt text]('./homepage.png')
 
 ## Kaushik's Blog!
 
