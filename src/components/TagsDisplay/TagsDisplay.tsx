@@ -12,7 +12,7 @@ const query = `*[_type == "tag"] {
   }`;
 
 const page = async () => {
-    const tags = await client.fetch(query);
+    const tags = await client.fetch(query, {}, {cache: "no-store"});
     return (
         <div className={styles.container}>
             <div className={styles.innercontainer}>

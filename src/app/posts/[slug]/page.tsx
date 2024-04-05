@@ -33,7 +33,7 @@ async function getPost(slug: string) {
         }
     `;
 
-    const post = await client.fetch(query);
+    const post = await client.fetch(query, {}, {cache: "no-store"});
     return post;
 }
 

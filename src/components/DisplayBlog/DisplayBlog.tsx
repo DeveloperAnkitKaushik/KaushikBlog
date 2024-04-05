@@ -29,7 +29,7 @@ async function getPosts() {
         slidesToShow: 3,
         slidesToScroll: 3
     };
-    const data = await client.fetch(query);
+    const data = await client.fetch(query, {}, {cache: "no-store"});
     return data;
 }
 

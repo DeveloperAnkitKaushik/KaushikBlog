@@ -23,7 +23,7 @@ async function getPostsByTag(tag: string) {
     }
     `;
 
-    const posts = await client.fetch(query);
+    const posts = await client.fetch(query, {}, {cache: "no-store"});
     return posts;
 }
 

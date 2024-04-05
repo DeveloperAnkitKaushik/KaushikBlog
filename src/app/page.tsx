@@ -21,7 +21,7 @@ const query = `*[_type == "post"] | order(publishedAt desc) [0] {
   }`;
 
 const Home = async () => {
-    const latestPost = await client.fetch(query);
+    const latestPost = await client.fetch(query, {}, {cache: "no-store"});
     return (
         <>
             <div className={styles.heroimg}></div>
