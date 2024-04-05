@@ -53,9 +53,6 @@ const Navbar = () => {
             >
               GitHub
             </a>
-            <Link href="/login" className={styles.link}>
-              Admin
-            </Link>
           </nav>
         </div>
       </header>
